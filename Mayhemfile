@@ -1,9 +1,9 @@
 project: fickling2
-target: fuzz_pickle_decompiler
+target: fuzz_pickle_decompiler1
 
-testsuite: 
-    - file://./fuzz/fuzz_corpus
+# testsuite: 
+#     - file://./fuzz/fuzz_corpus
 
 cmds:
-    - cmd: fuzz/fuzz_pickle_decompiler.py
+    - cmd: /fickling/fuzz/fuzz_pickle_decompiler.py
       libfuzzer: true

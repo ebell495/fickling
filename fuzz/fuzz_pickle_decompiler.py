@@ -15,7 +15,7 @@ with atheris.instrument_imports():
 def TestOneInput(data):
     try:
         Pickled.load(data)
-    except ValueError:
+    except Exception:
         pass
 
 
