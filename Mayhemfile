@@ -1,4 +1,4 @@
-project: fickling
+project: fickling2
 target: fuzz_pickle_decompiler
 
 testsuite: 
