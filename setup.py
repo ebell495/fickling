@@ -1,11 +1,4 @@
 from setuptools import setup, find_packages
-from sys import version_info
-
-if version_info >= (3, 9):
-    # ast.unparse was added in Python 3.9
-    requirements = []
-else:
-    requirements = ["astunparse~=1.6.3"]
 
 setup(
     name="fickling",
@@ -13,10 +6,10 @@ setup(
     license="LGPL-3.0-or-later",
     url="https://github.com/trailofbits/fickling",
     author="Trail of Bits",
-    version="0.0.3",
+    version="0.0.4",
     packages=find_packages(exclude=["test"]),
-    python_requires=">=3.6",
-    install_requires=requirements,
+    python_requires=">=3.7",
+    install_requires=["astunparse~=1.6.3"],
     extras_require={
         "dev": ["flake8", "pytest", "twine"],
         # Dependencies necessary to run the examples:
